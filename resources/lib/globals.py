@@ -33,6 +33,7 @@ settings = ADDON
 USERNAME = settings.getSetting("username")
 PASSWORD = settings.getSetting("password")
 TIME_FORMAT = settings.getSetting("time_format")
+LIVE_FROM_BEGINNING = settings.getSetting("live_from_beginning")
 
 ROOTDIR = xbmcaddon.Addon().getAddonInfo('path')
 USER_DATA_DIR = os.path.join(xbmc.translatePath("special://userdata"), 'addon_data', ADDON_ID)
@@ -257,6 +258,7 @@ def stream_to_listitem(stream_url):
         listitem.setProperty("inputstream.adaptive.manifest_type", "hls")
         listitem.setProperty("inputstream.adaptive.stream_headers",  'User-Agent=%s' % UA_PC)
         listitem.setProperty("inputstream.adaptive.license_key", '|User-Agent=%s' % UA_PC)
+        listitem.setProperty("inputstream.adaptive.play_timeshift_buffer", LIVE_FROM_BEGINNING)
     else:
         listitem = xbmcgui.ListItem(path=f"{stream_url}|{headers}")
 

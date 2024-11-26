@@ -9,4 +9,7 @@
   <category label="30159">
     <setting id="time_format" type="select" label="30200" lvalues="32000|32001" default="0" />
   </category>
+  <category label="30392">
+    <setting id="live_from_beginning" type="bool" label="30393" default="false"/>
+  </category>
 </settings>
