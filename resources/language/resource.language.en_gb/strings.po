@@ -270,9 +270,9 @@ msgid "Please select your favorite team from the addon settings"
 msgstr ""
 
 msgctxt "#30392"
-msgid "Stream"
+msgid "Playback"
 msgstr ""
 
 msgctxt "#30393"
-msgid "Play ongoing live games from the start of the stream"
+msgid "Start live stream playback from beginning"
 msgstr ""
